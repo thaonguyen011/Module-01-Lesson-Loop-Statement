@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 40%;
+            margin: auto;
+            
+        }
+        tr, td {
+            border: 1px solid black;
+            text-align: center;           
+        }
+        </style>
+</head>
+<body style="display: block;">
+    <table id="bang">
+    </table>
+
+    <script>
+       
+        let a= document.getElementById("bang").innerHTML;
+        for (let hang = 1; hang< 11; hang++) {
+                a += "<tr>"
+            for ( let cot = 1; cot < 11; cot++) {
+                a += "<td>"+(hang*cot)+"</td>";
+            }
+            a += "</tr>"
+        }
+
+        document.getElementById("bang").innerHTML= a;
+    </script>
+</body>
+</html>
